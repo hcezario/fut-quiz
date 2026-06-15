@@ -3,6 +3,10 @@ import { useGameStore } from '../store/gameStore';
 import type { MultiplaEscolhaQuestion } from '../data/types';
 import { Hud } from '../components/Hud';
 import { Feedback } from '../components/Feedback';
+import { IconCheck } from '../components/Icons';
+import { CATEGORIA_LABEL, DIFICULDADE_DOT, DIFICULDADE_LABEL } from '../data/labels';
+
+const LETRAS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 export function MultiplaEscolha() {
   const indice = useGameStore((s) => s.indice);
@@ -32,25 +36,43 @@ export function MultiplaEscolha() {
   return (
     <>
       <Hud atual={indice + 1} total={total} />
-      <div className="card">
-        <div className="enunciado">{pergunta.enunciado}</div>
-        <div className="alternativas">
-          {pergunta.payload.alternativas.map((alt, i) => {
-            let cls = 'btn alt';
-            if (respondido && i === correta) cls += ' correta';
-            else if (respondido && i === escolha) cls += ' errada';
-            return (
-              <button
-                key={i}
-                className={cls}
-                disabled={respondido}
-                onClick={() => escolher(i)}
-              >
-                {alt}
-              </button>
-            );
-          })}
+      <div className="tela">
+        <div className="sticker pad">
+          <div style={{ display: 'flex', gap: 7, marginBottom: 11 }}>
+            <span className="tag">{CATEGORIA_LABEL[pergunta.categoria].toUpperCase()}</span>
+            <span className="tag">
+              <span className={`dot ${DIFICULDADE_DOT[pergunta.dificuldade]}`} />
+              {DIFICULDADE_LABEL[pergunta.dificuldade].toUpperCase()}
+            </span>
+          </div>
+          <div className="enunciado" style={{ marginBottom: 14 }}>
+            {pergunta.enunciado}
+          </div>
+          <div className="alternativas">
+            {pergunta.payload.alternativas.map((alt, i) => {
+              let cls = 'alt';
+              if (respondido && i === correta) cls += ' correta';
+              else if (respondido && i === escolha) cls += ' errada';
+              return (
+                <button
+                  key={i}
+                  className={cls}
+                  disabled={respondido}
+                  onClick={() => escolher(i)}
+                >
+                  <span className="letra">{LETRAS[i]}</span>
+                  {alt}
+                  {respondido && i === correta && (
+                    <span className="marca">
+                      <IconCheck size={20} />
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
         </div>
+
         {respondido && (
           <Feedback
             acertou={escolha === correta}
@@ -60,7 +82,7 @@ export function MultiplaEscolha() {
             textoComplementar={
               escolha === correta
                 ? undefined
-                : `Resposta correta: ${pergunta.payload.alternativas[correta]}`
+                : `Resposta certa: ${pergunta.payload.alternativas[correta]}`
             }
             onProximo={proximo}
           />
