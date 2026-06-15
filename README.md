@@ -46,6 +46,21 @@ O `capacitor.config.ts` já aponta `webDir: dist`. As pastas nativas (`android/`
 | Caça-palavras | Grade gerada por algoritmo |
 | Cruzadinha | Gerada por algoritmo a partir de palavras + definições |
 
+## Solo e Duelo
+
+- **Solo** — um jogador; recorde, maior streak e nº de partidas ficam salvos.
+- **Duelo (pai vs filho)** — passe e jogue: o jogador 1 responde sua leva de
+  perguntas, passa o celular (tela de handoff, sem espiar), o jogador 2 responde
+  a leva dele e a tela final compara os placares e aponta o vencedor. Disponível
+  nos 4 modos de quiz.
+
+## Perfis e recordes (locais)
+
+Sem backend: os resultados ficam em `localStorage` (`src/data/storage.ts`), à
+prova de falha (cai para memória se o storage estiver indisponível). Guarda
+recorde por modo, maior streak e jogos por jogador, alimenta os atalhos de nome
+na Home e o selo **"Novo recorde!"** na tela final.
+
 ## Pontuação (seção 7 da spec)
 
 - Acerto: `fácil 10`, `médio 20`, `difícil 30`.
@@ -77,8 +92,8 @@ nunca manualmente.
 src/
   components/   # UI reutilizável (Hud, Feedback)
   modes/        # um módulo por modo de jogo
-  screens/      # Home, Config, Resultado
-  data/         # tipos + acesso ao conteúdo
+  screens/      # Home, Config, Handoff, Resultado
+  data/         # tipos + acesso ao conteúdo + perfis/recordes (storage)
   game/         # pontuação, streak, sorteio
   generators/   # caça-palavras e cruzadinha (algoritmos)
   store/        # estado da partida (Zustand)
@@ -88,6 +103,7 @@ content/        # banco curado, versionado (questions.json, words.json)
 ## Roadmap
 
 - **MVP:** web + JSON local, 6 modos, banco curado. ✅
+- **Modo Duelo (pai vs filho)** + **perfis/recordes locais.** ✅
 - **Fase 2a:** Capacitor → app instalável.
-- **Fase 2b:** Fastify + PostgreSQL + API.
-- **Fase 2c:** Modo Livre (API Claude com disclaimer), Modo Duelo, perfis e histórico.
+- **Fase 2b:** Fastify + PostgreSQL + API (sincronizar perfis/recordes entre dispositivos).
+- **Fase 2c:** Modo Livre (API Claude com disclaimer), histórico de evolução, conquistas.

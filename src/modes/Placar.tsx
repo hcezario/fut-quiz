@@ -15,8 +15,6 @@ function abreviacao(nome: string): string {
 }
 
 export function Placar() {
-  const indice = useGameStore((s) => s.indice);
-  const total = useGameStore((s) => s.totalRodadas);
   const pergunta = useGameStore((s) => s.perguntas[s.indice]) as PlacarQuestion;
   const responderQuiz = useGameStore((s) => s.responderQuiz);
   const proximaPergunta = useGameStore((s) => s.proximaPergunta);
@@ -69,7 +67,7 @@ export function Placar() {
 
   return (
     <>
-      <Hud atual={indice + 1} total={total} />
+      <Hud />
       <div className="tela">
         <div className="modo-cabecalho">
           <span className="icon-tile sm bg-amber">

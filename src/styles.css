@@ -1119,3 +1119,181 @@ h3 {
   font-size: 12px;
   color: var(--muted);
 }
+
+/* ---------- Solo / Duelo ---------- */
+.seg {
+  display: flex;
+  gap: 6px;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 var(--ink);
+  padding: 5px;
+}
+.seg-opt {
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+}
+.seg-opt.ativo {
+  background: var(--inkgreen);
+  color: #fff;
+}
+
+.modo-card.locked {
+  position: relative;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.modo-card .lock-tag {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--paper);
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 8px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 6px;
+  border-radius: 6px;
+}
+
+/* HUD do duelo */
+.hud-duelo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.duelo-jog {
+  background: rgba(20, 32, 26, 0.06);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.duelo-jog.ativo {
+  background: var(--inkgreen);
+  border-color: var(--ink);
+}
+.duelo-jog .nome {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.duelo-jog.ativo .nome {
+  color: rgba(255, 255, 255, 0.8);
+}
+.duelo-jog .pts {
+  font-family: var(--font-title);
+  font-size: 20px;
+  color: var(--ink);
+}
+.duelo-jog.ativo .pts {
+  color: var(--lime);
+}
+
+/* Handoff (passagem de turno) */
+.handoff {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.handoff-box {
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.handoff-avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: var(--inkgreen);
+  color: var(--lime);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: 44px;
+  border: 3px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+}
+.handoff-nome {
+  font-size: 30px;
+  color: var(--ink);
+}
+.handoff-dica {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 13px;
+  max-width: 240px;
+  margin: 4px 0 0;
+}
+
+/* Resultado de duelo */
+.duelo-placar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px;
+}
+.duelo-card {
+  padding: 18px 12px 16px;
+  text-align: center;
+  position: relative;
+}
+.duelo-card.vencedor {
+  background: var(--lime);
+}
+.duelo-card .coroa {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--amber);
+  border: 2px solid var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink);
+}
+.duelo-nome {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.duelo-pontos {
+  font-family: var(--font-title);
+  font-size: 44px;
+  color: var(--ink);
+  line-height: 0.9;
+  margin: 6px 0 4px;
+}
+.duelo-detalhe {
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--muted);
+}
+.duelo-card.vencedor .duelo-detalhe {
+  color: var(--acerto-texto);
+}

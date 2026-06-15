@@ -23,8 +23,6 @@ function acertou(resposta: string, gabarito: string): boolean {
 }
 
 export function QuemE() {
-  const indice = useGameStore((s) => s.indice);
-  const total = useGameStore((s) => s.totalRodadas);
   const pergunta = useGameStore((s) => s.perguntas[s.indice]) as QuemEQuestion;
   const responderQuiz = useGameStore((s) => s.responderQuiz);
   const proximaPergunta = useGameStore((s) => s.proximaPergunta);
@@ -68,7 +66,7 @@ export function QuemE() {
 
   return (
     <>
-      <Hud atual={indice + 1} total={total} />
+      <Hud />
       <div className="tela">
         <div className="modo-cabecalho">
           <div className="quem-avatar">?</div>
