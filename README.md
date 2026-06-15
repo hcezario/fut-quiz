@@ -1,0 +1,90 @@
+# ⚽ Fut Quiz
+
+App de quiz de futebol com foco em **futebol brasileiro, Santos FC e Copa do Mundo**.
+MVP roda **100% offline**, sem backend e sem API de IA — todo o conteúdo vem de um
+banco curado e verificado por humanos.
+
+## Stack
+
+- **React + Vite + TypeScript** — base web reaproveitável no app.
+- **Zustand** — estado da partida (sem Redux).
+- **Capacitor** — empacota o mesmo código web como iOS/Android.
+- **Conteúdo:** JSON estático curado em `content/` (zero infra, zero rede). A migração
+  para SQLite/PostgreSQL na Fase 2 troca apenas `src/data/content.ts`.
+
+## Rodando
+
+```bash
+npm install
+npm run dev        # ambiente de desenvolvimento
+npm run build      # typecheck + build de produção (gera dist/)
+npm run preview    # serve o build
+```
+
+### Empacotar com Capacitor (Fase 2a)
+
+```bash
+npm run build
+npx cap add android   # ou ios (requer SDK nativo instalado)
+npm run cap:sync
+```
+
+O `capacitor.config.ts` já aponta `webDir: dist`. As pastas nativas (`android/`,
+`ios/`) são geradas localmente e ficam fora do versionamento.
+
+## Modos de jogo (MVP)
+
+| Modo | Descrição |
+|------|-----------|
+| Múltipla escolha | Pergunta + 4 alternativas |
+| Verdade ou Mito | Afirmação V/F com explicação |
+| Complete o placar | Preenche o gol que falta |
+| Quem é o jogador? | Dicas progressivas; menos dicas = mais pontos |
+| Caça-palavras | Grade gerada por algoritmo |
+| Cruzadinha | Gerada por algoritmo a partir de palavras + definições |
+
+## Pontuação (seção 7 da spec)
+
+- Acerto: `fácil 10`, `médio 20`, `difícil 30`.
+- **Streak:** +5 de bônus a cada bloco de 3 acertos consecutivos.
+- **Quem é o jogador?:** 40 → 30 → 20 → 10 conforme dicas reveladas.
+- Caça-palavras / cruzadinha: pontos por palavra encontrada.
+- Erro **não** tira pontos (público infantojuvenil).
+
+## Conteúdo — regra não negociável
+
+`content/` é a **fonte da verdade humana**.
+
+- Toda pergunta factual tem `verificado: 1` e uma `fonte` registrada. O loader
+  (`src/data/content.ts`) **filtra e só exibe** perguntas com `verificado === 1`.
+- IA **não** gera perguntas factuais no MVP (fica para o "Modo Livre" da Fase 2).
+- Caça-palavras e cruzadinha são gerados por **algoritmo** a partir de `content/words.json`.
+
+Banco atual: **126 perguntas** (42 por categoria) + 30 palavras.
+
+### Editando o banco
+
+As perguntas vivem em `content/questions.json` (array único com discriminador `tipo`
+e `payload` em JSON por tipo). Edite o JSON legível — os IDs são atribuídos na carga,
+nunca manualmente.
+
+## Estrutura
+
+```
+src/
+  components/   # UI reutilizável (Hud, Feedback)
+  modes/        # um módulo por modo de jogo
+  screens/      # Home, Config, Resultado
+  data/         # tipos + acesso ao conteúdo
+  game/         # pontuação, streak, sorteio
+  generators/   # caça-palavras e cruzadinha (algoritmos)
+  store/        # estado da partida (Zustand)
+content/        # banco curado, versionado (questions.json, words.json)
+```
+
+## Roadmap
+
+- **MVP:** web + JSON local, 6 modos, banco curado. ✅
+- **Fase 2a:** Capacitor → app instalável.
+- **Fase 2b:** Fastify + PostgreSQL + API.
+- **Fase 2c:** Modo Livre (API Claude com disclaimer), Modo Duelo, perfis e histórico.

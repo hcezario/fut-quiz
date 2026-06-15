@@ -1,0 +1,521 @@
+:root {
+  --verde: #0a7d3c;
+  --verde-escuro: #075c2c;
+  --verde-claro: #14a85a;
+  --amarelo: #ffcf2e;
+  --azul: #1b3a6b;
+  --branco: #ffffff;
+  --cinza: #f1f3f5;
+  --cinza-borda: #d7dde2;
+  --texto: #1c2227;
+  --texto-claro: #5b666f;
+  --vermelho: #d1372b;
+  --verde-acerto: #1f9d57;
+  --sombra: 0 6px 20px rgba(0, 0, 0, 0.12);
+  --raio: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  color: var(--texto);
+  background: linear-gradient(160deg, var(--verde) 0%, var(--verde-escuro) 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 760px;
+  min-height: 100vh;
+  padding: 16px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---------- Tipografia ---------- */
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.titulo-app {
+  color: var(--branco);
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.subtitulo {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ---------- Cartões ---------- */
+.card {
+  background: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  padding: 20px;
+}
+
+.card + .card {
+  margin-top: 0;
+}
+
+/* ---------- Botões ---------- */
+.btn {
+  font: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: transform 0.05s ease, filter 0.15s ease, background 0.15s ease;
+  background: var(--cinza);
+  color: var(--texto);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-primario {
+  background: var(--verde);
+  color: var(--branco);
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.btn-primario:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.btn-bloco {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-bloco .emoji {
+  font-size: 1.6rem;
+}
+
+.btn-secundario {
+  background: transparent;
+  color: var(--branco);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* ---------- Listas de modos ---------- */
+.lista-modos {
+  display: grid;
+  gap: 12px;
+}
+
+.modo-titulo {
+  font-weight: 700;
+}
+
+.modo-desc {
+  color: var(--texto-claro);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* ---------- Chips de seleção ---------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font: inherit;
+  border: 2px solid var(--cinza-borda);
+  background: var(--branco);
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--texto-claro);
+}
+
+.chip.ativo {
+  border-color: var(--verde);
+  background: var(--verde);
+  color: var(--branco);
+}
+
+.label-grupo {
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* ---------- Cabeçalho de jogo ---------- */
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: var(--branco);
+}
+
+.hud .pill {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.hud .streak {
+  background: var(--amarelo);
+  color: var(--azul);
+}
+
+.progresso {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progresso > div {
+  height: 100%;
+  background: var(--amarelo);
+  transition: width 0.3s ease;
+}
+
+/* ---------- Pergunta / alternativas ---------- */
+.enunciado {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.alternativas {
+  display: grid;
+  gap: 10px;
+}
+
+.alt {
+  text-align: left;
+  background: var(--cinza);
+  border: 2px solid transparent;
+}
+
+.alt.correta {
+  background: #e3f7ec;
+  border-color: var(--verde-acerto);
+}
+
+.alt.errada {
+  background: #fbe3e1;
+  border-color: var(--vermelho);
+}
+
+.vm-botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.btn-verdade {
+  background: #e3f7ec;
+  color: var(--verde-acerto);
+  font-size: 1.1rem;
+}
+
+.btn-mito {
+  background: #fbe3e1;
+  color: var(--vermelho);
+  font-size: 1.1rem;
+}
+
+/* ---------- Placar (complete o placar) ---------- */
+.placar-jogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.placar-time {
+  text-align: center;
+  min-width: 90px;
+}
+
+.placar-gols {
+  font-size: 2rem;
+  min-width: 48px;
+  text-align: center;
+}
+
+.placar-input {
+  width: 64px;
+  font: inherit;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  border: 2px solid var(--cinza-borda);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+/* ---------- Quem é o jogador ---------- */
+.dicas {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.dica {
+  background: var(--cinza);
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.quem-input {
+  width: 100%;
+  font: inherit;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: 2px solid var(--cinza-borda);
+  border-radius: 10px;
+}
+
+/* ---------- Feedback ---------- */
+.feedback {
+  margin-top: 16px;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.feedback.ok {
+  background: #e3f7ec;
+  border: 1px solid var(--verde-acerto);
+}
+
+.feedback.nok {
+  background: #fbe3e1;
+  border: 1px solid var(--vermelho);
+}
+
+.feedback .titulo-fb {
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.feedback .explicacao {
+  font-size: 0.95rem;
+}
+
+.feedback .fonte {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: var(--texto-claro);
+}
+
+/* ---------- Caça-palavras ---------- */
+.grade-wrap {
+  overflow-x: auto;
+}
+
+.grade {
+  display: grid;
+  gap: 2px;
+  user-select: none;
+  touch-action: none;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.celula {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cinza);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.celula.sel {
+  background: var(--amarelo);
+  color: var(--azul);
+}
+
+.celula.achou {
+  background: var(--verde-acerto);
+  color: var(--branco);
+}
+
+.lista-palavras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.palavra-tag {
+  background: var(--cinza);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.palavra-tag.achou {
+  background: var(--verde-acerto);
+  color: var(--branco);
+  text-decoration: line-through;
+}
+
+/* ---------- Cruzadinha ---------- */
+.cruz-grade {
+  display: grid;
+  gap: 2px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.cruz-cel {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.cruz-cel.vazia {
+  background: transparent;
+}
+
+.cruz-cel input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--cinza-borda);
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font: inherit;
+  font-weight: 700;
+  padding: 0;
+  background: var(--branco);
+}
+
+.cruz-cel input.ok {
+  background: #e3f7ec;
+  border-color: var(--verde-acerto);
+}
+
+.cruz-cel .num {
+  position: absolute;
+  top: 0;
+  left: 1px;
+  font-size: 0.5rem;
+  font-weight: 700;
+  color: var(--texto-claro);
+  line-height: 1;
+}
+
+.dicas-cruz {
+  margin-top: 16px;
+}
+
+.dicas-cruz h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.dicas-cruz ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.dicas-cruz li {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Resultado ---------- */
+.resultado-grande {
+  text-align: center;
+}
+
+.resultado-pontos {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--verde);
+}
+
+.resultado-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stat {
+  background: var(--cinza);
+  border-radius: 12px;
+  padding: 14px;
+  text-align: center;
+}
+
+.stat .valor {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.stat .rotulo {
+  font-size: 0.8rem;
+  color: var(--texto-claro);
+}
+
+.aviso {
+  color: var(--texto-claro);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.acoes-rodape {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+}
