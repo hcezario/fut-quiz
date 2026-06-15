@@ -1,0 +1,1992 @@
+[
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Em que cidade do estado de São Paulo fica o Santos Futebol Clube?",
+    "payload": {
+      "alternativas": [
+        "Santos",
+        "São Paulo",
+        "Campinas",
+        "Sorocaba"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos FC é da cidade litorânea de Santos, no estado de São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Quais são as cores tradicionais do Santos?",
+    "payload": {
+      "alternativas": [
+        "Preto e branco",
+        "Azul e branco",
+        "Vermelho e preto",
+        "Verde e branco"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos é conhecido como Alvinegro Praiano por causa das cores preto e branco.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Qual é o apelido mais famoso do Santos?",
+    "payload": {
+      "alternativas": [
+        "Peixe",
+        "Galo",
+        "Timão",
+        "Fogão"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Por ser de uma cidade litorânea, o Santos é carinhosamente chamado de Peixe.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Qual é o nome do estádio onde o Santos manda seus jogos?",
+    "payload": {
+      "alternativas": [
+        "Vila Belmiro",
+        "Maracanã",
+        "Morumbi",
+        "Pacaembu"
+      ],
+      "correta": 0
+    },
+    "explicacao": "A Vila Belmiro, oficialmente Estádio Urbano Caldeira, é a casa do Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Estádio Urbano Caldeira"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Qual é o nome oficial do estádio do Santos, conhecido como Vila Belmiro?",
+    "payload": {
+      "alternativas": [
+        "Estádio Urbano Caldeira",
+        "Estádio do Pacaembu",
+        "Estádio Cícero Pompeu de Toledo",
+        "Estádio Mário Filho"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O nome oficial do estádio é Urbano Caldeira, mas é mundialmente conhecido como Vila Belmiro.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Estádio Urbano Caldeira"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Em que ano o Santos Futebol Clube foi fundado?",
+    "payload": {
+      "alternativas": [
+        "1912",
+        "1900",
+        "1925",
+        "1930"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos foi fundado em 14 de abril de 1912.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Quem é considerado o maior ídolo da história do Santos?",
+    "payload": {
+      "alternativas": [
+        "Pelé",
+        "Romário",
+        "Zico",
+        "Ronaldo"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Pelé é o maior ídolo do Santos e um dos maiores jogadores de todos os tempos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pelé"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Qual destes craques foi revelado pelo Santos antes de ir para o Barcelona?",
+    "payload": {
+      "alternativas": [
+        "Neymar",
+        "Kaká",
+        "Ronaldinho Gaúcho",
+        "Rivaldo"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Neymar foi revelado pelo Santos e depois se transferiu para o Barcelona em 2013.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Neymar"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Qual destes jogadores NÃO foi revelado nas categorias de base do Santos?",
+    "payload": {
+      "alternativas": [
+        "Cafu",
+        "Robinho",
+        "Diego",
+        "Elano"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Robinho, Diego e Elano surgiram na base do Santos. Cafu foi revelado pelo São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia — categorias de base do Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Quantas vezes o Santos conquistou a Copa Libertadores da América?",
+    "payload": {
+      "alternativas": [
+        "3",
+        "1",
+        "2",
+        "5"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos foi campeão da Libertadores em 1962, 1963 e 2011.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Em quais anos o Santos venceu a Copa Libertadores na era Pelé?",
+    "payload": {
+      "alternativas": [
+        "1962 e 1963",
+        "1960 e 1961",
+        "1964 e 1965",
+        "1962 e 1965"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Com Pelé, o Santos foi bicampeão da Libertadores em 1962 e 1963.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Em que ano o Santos voltou a conquistar a Copa Libertadores, com Neymar e Ganso no time?",
+    "payload": {
+      "alternativas": [
+        "2011",
+        "2009",
+        "2013",
+        "2015"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Em 2011 o Santos foi campeão da Libertadores com Neymar e Ganso em destaque.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Copa Libertadores de 2011"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Em quais anos o Santos foi campeão do Campeonato Brasileiro pela era moderna (pontos corridos / Brasileirão)?",
+    "payload": {
+      "alternativas": [
+        "2002 e 2004",
+        "2005 e 2007",
+        "2000 e 2002",
+        "2004 e 2006"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos conquistou o Campeonato Brasileiro em 2002 e 2004.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Contra qual time e em qual estádio Pelé marcou seu milésimo gol?",
+    "payload": {
+      "alternativas": [
+        "Vasco, no Maracanã",
+        "Flamengo, na Vila Belmiro",
+        "Botafogo, no Maracanã",
+        "Fluminense, no Maracanã"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Pelé marcou seu gol de número 1000 em 19 de novembro de 1969, contra o Vasco, no Maracanã.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pelé"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Quantas vezes o Santos venceu a Copa Intercontinental (Mundial Interclubes) na década de 1960?",
+    "payload": {
+      "alternativas": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos venceu o Mundial Interclubes (Copa Intercontinental) em 1962 e 1963.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "O meia revelado pelo Santos que formou dupla com Neymar no título de 2011 ficou conhecido como:",
+    "payload": {
+      "alternativas": [
+        "Ganso",
+        "Pato",
+        "Hulk",
+        "Lucas"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Paulo Henrique Ganso brilhou ao lado de Neymar no Santos campeão da Libertadores de 2011.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Paulo Henrique Ganso"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "O Santos é apelidado de Peixe.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. Por ser de uma cidade litorânea, o Santos é chamado de Peixe.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "As cores do Santos são azul e vermelho.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito. As cores tradicionais do Santos são o preto e o branco.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Pelé jogou a maior parte de sua carreira pelo Santos.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. Pelé defendeu o Santos por quase duas décadas, de 1956 a 1974.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pelé"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "O Santos manda seus jogos no estádio Vila Belmiro.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. A Vila Belmiro (Estádio Urbano Caldeira) é a casa do Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Estádio Urbano Caldeira"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Neymar foi revelado pelo Santos.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. Neymar surgiu nas categorias de base do Santos e brilhou no time profissional.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Neymar"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "O Santos foi fundado em 1912.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. O Santos Futebol Clube foi fundado em 14 de abril de 1912.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "O Santos nunca conquistou a Copa Libertadores.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito. O Santos venceu a Libertadores em 1962, 1963 e 2011.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Robinho foi revelado nas categorias de base do Santos.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. Robinho surgiu na base do Santos e foi destaque no início dos anos 2000.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Robinho"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "O Santos foi campeão mundial de clubes em 1962 e 1963.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. O Santos venceu a Copa Intercontinental (Mundial) em 1962 e 1963.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "O Santos fica na cidade de São Paulo, capital.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito. O Santos fica na cidade litorânea de Santos, e não na capital São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Pelé marcou seu milésimo gol jogando pelo Santos.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. Pelé fez o gol de número 1000 pelo Santos, em 1969, no Maracanã, contra o Vasco.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pelé"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "O Santos é conhecido como Alvinegro Praiano.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. Por ser preto e branco (alvinegro) e da praia, o Santos é o Alvinegro Praiano.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Ganso e Neymar foram destaques do Santos campeão da Libertadores de 2011.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. A dupla Neymar e Ganso foi fundamental no título da Libertadores de 2011.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Copa Libertadores de 2011"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "O Santos é um time do estado de São Paulo.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. O Santos é da cidade de Santos, no litoral do estado de São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Diego, que depois jogou na Europa, foi revelado pelo Santos.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade. O meia Diego surgiu na base do Santos no início dos anos 2000.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Diego Ribas"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Pelé",
+      "dicas": [
+        "É considerado um dos maiores jogadores da história.",
+        "Conquistou três Copas do Mundo pela seleção brasileira.",
+        "Fez quase toda a carreira pelo Santos.",
+        "Marcou seu milésimo gol em 1969, no Maracanã."
+      ]
+    },
+    "explicacao": "Pelé, o Rei do Futebol, é o maior ídolo do Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pelé"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Neymar",
+      "dicas": [
+        "É um atacante brasileiro famoso por suas jogadas e dribles.",
+        "Foi revelado por um clube do litoral paulista.",
+        "Ganhou a Libertadores de 2011 pelo Santos.",
+        "Depois se transferiu para o Barcelona."
+      ]
+    },
+    "explicacao": "Neymar foi revelado pelo Santos e ganhou a Libertadores de 2011.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Neymar"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Robinho",
+      "dicas": [
+        "É um atacante brasileiro conhecido pelo drible chamado pedalada.",
+        "Foi revelado na base do Santos.",
+        "Foi destaque no Santos no começo dos anos 2000.",
+        "Depois jogou no Real Madrid e no Manchester City."
+      ]
+    },
+    "explicacao": "Robinho foi um dos maiores destaques do Santos no início dos anos 2000.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Robinho"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Ganso",
+      "dicas": [
+        "É um meia brasileiro com grande visão de jogo.",
+        "Foi revelado pelo Santos.",
+        "Formou uma famosa dupla de meio-campo com Neymar.",
+        "Seu apelido é o nome de uma ave."
+      ]
+    },
+    "explicacao": "Paulo Henrique Ganso brilhou ao lado de Neymar no Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Paulo Henrique Ganso"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Elano",
+      "dicas": [
+        "É um meia brasileiro com forte chute de fora da área.",
+        "Foi revelado pelo Santos.",
+        "Foi destaque no Santos no começo dos anos 2000.",
+        "Depois jogou no Shakhtar e no Manchester City."
+      ]
+    },
+    "explicacao": "Elano foi revelado pelo Santos e jogou na Europa.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Elano"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Diego",
+      "dicas": [
+        "É um meia brasileiro habilidoso.",
+        "Foi revelado pelo Santos no início dos anos 2000.",
+        "Jogou no Porto, no Werder Bremen e na Juventus.",
+        "Depois fez muito sucesso pelo Flamengo."
+      ]
+    },
+    "explicacao": "Diego Ribas surgiu nas categorias de base do Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Diego Ribas"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Coutinho",
+      "dicas": [
+        "É um atacante histórico do Santos dos anos 1960.",
+        "Formou uma famosa dupla de ataque com Pelé.",
+        "Ficou conhecido pelas tabelinhas com o Rei.",
+        "Seu nome completo é Antônio Wilson Vieira Honório."
+      ]
+    },
+    "explicacao": "Coutinho formou uma das duplas de ataque mais famosas do futebol ao lado de Pelé no Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Coutinho (futebolista)"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este jogador?",
+    "payload": {
+      "resposta": "Pepe",
+      "dicas": [
+        "É um atacante histórico do Santos da era de ouro.",
+        "Era famoso pelo chute potente de perna esquerda.",
+        "Jogou ao lado de Pelé nos anos 1950 e 1960.",
+        "É um dos maiores artilheiros da história do clube."
+      ]
+    },
+    "explicacao": "Pepe foi um dos grandes craques do Santos na era Pelé, famoso por sua perna esquerda.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pepe (futebolista, 1935)"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "medio",
+    "enunciado": "Qual atacante formou com Pelé uma das duplas de ataque mais famosas do Santos nos anos 1960?",
+    "payload": {
+      "alternativas": [
+        "Coutinho",
+        "Tostão",
+        "Gérson",
+        "Jairzinho"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Coutinho e Pelé formaram uma dupla de ataque lendária no Santos.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Coutinho (futebolista)"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "facil",
+    "enunciado": "O Santos disputa seus jogos como mandante principalmente em qual estado?",
+    "payload": {
+      "alternativas": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Minas Gerais",
+        "Paraná"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Santos é da cidade de Santos, no estado de São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Santos FC"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "santos",
+    "dificuldade": "dificil",
+    "enunciado": "Em qual ano Pelé marcou seu famoso milésimo gol pelo Santos?",
+    "payload": {
+      "alternativas": [
+        "1969",
+        "1965",
+        "1972",
+        "1958"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Pelé fez o milésimo gol em 19 de novembro de 1969, no Maracanã, contra o Vasco.",
+    "verificado": 1,
+    "fonte": "Wikipédia — Pelé"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "Quantas vezes o Brasil foi campeão da Copa do Mundo?",
+    "payload": {
+      "alternativas": [
+        "3 vezes",
+        "4 vezes",
+        "5 vezes",
+        "6 vezes"
+      ],
+      "correta": 2
+    },
+    "explicacao": "O Brasil é pentacampeão mundial: 1958, 1962, 1970, 1994 e 2002.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "Em qual país aconteceu a primeira Copa do Mundo, em 1930?",
+    "payload": {
+      "alternativas": [
+        "Brasil",
+        "Uruguai",
+        "Itália",
+        "Argentina"
+      ],
+      "correta": 1
+    },
+    "explicacao": "A primeira Copa do Mundo foi realizada no Uruguai, em 1930, e o país anfitrião foi o campeão.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "Qual seleção venceu a primeira Copa do Mundo, em 1930?",
+    "payload": {
+      "alternativas": [
+        "Uruguai",
+        "Brasil",
+        "Argentina",
+        "Itália"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Uruguai foi o campeão da primeira Copa, em casa, vencendo a Argentina na final.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Quantos anos tinha Pelé quando conquistou sua primeira Copa do Mundo, em 1958?",
+    "payload": {
+      "alternativas": [
+        "15 anos",
+        "17 anos",
+        "19 anos",
+        "21 anos"
+      ],
+      "correta": 1
+    },
+    "explicacao": "Pelé tinha apenas 17 anos quando o Brasil foi campeão na Suécia, em 1958.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Em qual país o Brasil conquistou o título de 1958?",
+    "payload": {
+      "alternativas": [
+        "Chile",
+        "Suécia",
+        "México",
+        "Suíça"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Brasil conquistou seu primeiro título mundial na Suécia, em 1958.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Qual seleção o Brasil venceu na final da Copa de 1970, no México?",
+    "payload": {
+      "alternativas": [
+        "Alemanha",
+        "Itália",
+        "Uruguai",
+        "Holanda"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Brasil venceu a Itália por 4 a 1 na final de 1970, no México.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Quem é o maior artilheiro da história das Copas do Mundo?",
+    "payload": {
+      "alternativas": [
+        "Ronaldo",
+        "Pelé",
+        "Miroslav Klose",
+        "Gerd Müller"
+      ],
+      "correta": 2
+    },
+    "explicacao": "O alemão Miroslav Klose é o maior artilheiro das Copas com 16 gols.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Em qual Copa do Mundo Ronaldo (Fenômeno) foi o artilheiro com 8 gols?",
+    "payload": {
+      "alternativas": [
+        "1998",
+        "2002",
+        "2006",
+        "1994"
+      ],
+      "correta": 1
+    },
+    "explicacao": "Ronaldo foi artilheiro da Copa de 2002, com 8 gols, ajudando o Brasil a ser pentacampeão.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "Qual seleção venceu a Copa do Mundo de 2022, no Catar?",
+    "payload": {
+      "alternativas": [
+        "França",
+        "Brasil",
+        "Argentina",
+        "Croácia"
+      ],
+      "correta": 2
+    },
+    "explicacao": "A Argentina foi campeã em 2022, com Messi, vencendo a França nos pênaltis após 3 a 3.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "Qual seleção venceu a Copa do Mundo de 2018, na Rússia?",
+    "payload": {
+      "alternativas": [
+        "Croácia",
+        "França",
+        "Bélgica",
+        "Inglaterra"
+      ],
+      "correta": 1
+    },
+    "explicacao": "A França foi campeã em 2018, vencendo a Croácia por 4 a 2 na final.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Qual seleção foi campeã da Copa do Mundo de 2014, realizada no Brasil?",
+    "payload": {
+      "alternativas": [
+        "Argentina",
+        "Brasil",
+        "Alemanha",
+        "Espanha"
+      ],
+      "correta": 2
+    },
+    "explicacao": "A Alemanha foi campeã em 2014, vencendo a Argentina por 1 a 0 na final, no Maracanã.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Qual seleção venceu a Copa do Mundo de 2010, na África do Sul?",
+    "payload": {
+      "alternativas": [
+        "Holanda",
+        "Espanha",
+        "Alemanha",
+        "Uruguai"
+      ],
+      "correta": 1
+    },
+    "explicacao": "A Espanha foi campeã pela primeira vez em 2010, vencendo a Holanda por 1 a 0 na final.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Qual seleção foi campeã da Copa do Mundo de 2006, na Alemanha?",
+    "payload": {
+      "alternativas": [
+        "França",
+        "Itália",
+        "Alemanha",
+        "Portugal"
+      ],
+      "correta": 1
+    },
+    "explicacao": "A Itália foi campeã em 2006, vencendo a França nos pênaltis.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Quantos jogadores são tricampeões mundiais como Pelé (1958, 1962 e 1970)?",
+    "payload": {
+      "alternativas": [
+        "Apenas Pelé",
+        "Dois jogadores",
+        "Cinco jogadores",
+        "Dez jogadores"
+      ],
+      "correta": 0
+    },
+    "explicacao": "Pelé é o único jogador a conquistar três Copas do Mundo: 1958, 1962 e 1970.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Em qual Copa do Mundo Maradona marcou o gol da 'Mão de Deus' contra a Inglaterra?",
+    "payload": {
+      "alternativas": [
+        "1982",
+        "1986",
+        "1990",
+        "1994"
+      ],
+      "correta": 1
+    },
+    "explicacao": "Foi na Copa de 1986, no México, onde a Argentina foi campeã com Maradona.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "O Brasil é a única seleção que disputou todas as Copas do Mundo já realizadas.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Brasil é a única seleção presente em todas as edições da Copa do Mundo.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "A Copa do Mundo acontece de quatro em quatro anos.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! A Copa do Mundo masculina é realizada a cada quatro anos.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "O Brasil venceu a Copa do Mundo de 1950, em casa, no Maracanã.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! Em 1950 o Uruguai venceu o Brasil por 2 a 1 no Maracanã, episódio chamado de Maracanazo.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Na Copa de 2014, a Alemanha venceu o Brasil por 7 a 1 na semifinal.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! A Alemanha goleou o Brasil por 7 a 1 na semifinal de 2014.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Pelé fez parte do elenco campeão do Brasil em 1962.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Pelé foi campeão em 1962, embora tenha se machucado no início do torneio.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "A seleção da Argentina nunca foi campeã da Copa do Mundo.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! A Argentina foi campeã em 1978, 1986 e 2022.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Zinedine Zidane marcou dois gols na final da Copa de 1998 contra o Brasil.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Zidane marcou dois gols de cabeça na vitória da França por 3 a 0 sobre o Brasil em 1998.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Na final da Copa de 2006, Zidane foi expulso por uma cabeçada em Materazzi.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Zidane deu uma cabeçada em Materazzi e foi expulso na final de 2006.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "A Itália já foi campeã do mundo mais de uma vez.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! A Itália é tetracampeã: 1934, 1938, 1982 e 2006.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Lionel Messi foi campeão mundial pela primeira vez em 2022.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Messi conquistou seu primeiro título mundial com a Argentina em 2022, no Catar.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "A Copa do Mundo de 2002 foi realizada em dois países ao mesmo tempo.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! A Copa de 2002 foi sediada pela Coreia do Sul e pelo Japão.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "A Alemanha nunca venceu uma Copa do Mundo.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! A Alemanha é tetracampeã: 1954, 1974, 1990 e 2014.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "A primeira Copa do Mundo teve mais de 50 seleções participantes.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! A Copa de 1930 teve apenas 13 seleções participantes.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Complete o placar da final da Copa de 1970: Brasil x Itália.",
+    "payload": {
+      "time_casa": "Brasil",
+      "time_visitante": "Itália",
+      "gols_casa": 4,
+      "gols_visitante": 1,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Brasil venceu a Itália por 4 a 1 na final de 1970, conquistando o tricampeonato.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Complete o placar da semifinal da Copa de 2014: Brasil x Alemanha.",
+    "payload": {
+      "time_casa": "Brasil",
+      "time_visitante": "Alemanha",
+      "gols_casa": 1,
+      "gols_visitante": 7,
+      "lacuna": "gols_visitante"
+    },
+    "explicacao": "A Alemanha goleou o Brasil por 7 a 1 na semifinal de 2014.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Complete o placar da final da Copa de 2002: Brasil x Alemanha.",
+    "payload": {
+      "time_casa": "Brasil",
+      "time_visitante": "Alemanha",
+      "gols_casa": 2,
+      "gols_visitante": 0,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Brasil venceu a Alemanha por 2 a 0 na final de 2002, com dois gols de Ronaldo.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Complete o placar da final da Copa de 1998: Brasil x França.",
+    "payload": {
+      "time_casa": "Brasil",
+      "time_visitante": "França",
+      "gols_casa": 0,
+      "gols_visitante": 3,
+      "lacuna": "gols_visitante"
+    },
+    "explicacao": "A França venceu o Brasil por 3 a 0 na final de 1998, com dois gols de Zidane.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Complete o placar da decisão de 1950 no Maracanã: Uruguai x Brasil.",
+    "payload": {
+      "time_casa": "Uruguai",
+      "time_visitante": "Brasil",
+      "gols_casa": 2,
+      "gols_visitante": 1,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Uruguai venceu o Brasil por 2 a 1 no Maracanã, o famoso Maracanazo de 1950.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Complete o placar da final da Copa de 2018: França x Croácia.",
+    "payload": {
+      "time_casa": "França",
+      "time_visitante": "Croácia",
+      "gols_casa": 4,
+      "gols_visitante": 2,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "A França venceu a Croácia por 4 a 2 na final de 2018, na Rússia.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "facil",
+    "enunciado": "Quem é este jogador brasileiro?",
+    "payload": {
+      "resposta": "Pelé",
+      "dicas": [
+        "Estreou em Copas com apenas 17 anos.",
+        "É o único tricampeão mundial da história.",
+        "Foi campeão em 1958, 1962 e 1970.",
+        "É conhecido como o Rei do Futebol."
+      ]
+    },
+    "explicacao": "Pelé é o único jogador tricampeão do mundo e é chamado de Rei do Futebol.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador brasileiro?",
+    "payload": {
+      "resposta": "Ronaldo",
+      "dicas": [
+        "É conhecido como o Fenômeno.",
+        "Foi artilheiro da Copa de 2002 com 8 gols.",
+        "Marcou os dois gols da final contra a Alemanha em 2002.",
+        "Foi campeão mundial em 1994 e 2002."
+      ]
+    },
+    "explicacao": "Ronaldo, o Fenômeno, foi o herói do penta em 2002, marcando os dois gols da final.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador argentino?",
+    "payload": {
+      "resposta": "Diego Maradona",
+      "dicas": [
+        "Foi campeão mundial em 1986.",
+        "Marcou o gol da 'Mão de Deus' contra a Inglaterra.",
+        "Também fez um gol driblando vários jogadores na mesma partida.",
+        "É considerado um dos maiores ídolos da Argentina."
+      ]
+    },
+    "explicacao": "Maradona liderou a Argentina ao título de 1986 e marcou gols históricos contra a Inglaterra.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador argentino?",
+    "payload": {
+      "resposta": "Lionel Messi",
+      "dicas": [
+        "É um dos maiores craques da história do futebol.",
+        "Jogou muitos anos no Barcelona.",
+        "Foi eleito o melhor jogador da Copa de 2022.",
+        "Conquistou seu primeiro título mundial no Catar, em 2022."
+      ]
+    },
+    "explicacao": "Messi foi campeão mundial e melhor jogador da Copa de 2022, no Catar.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este jogador alemão?",
+    "payload": {
+      "resposta": "Miroslav Klose",
+      "dicas": [
+        "Jogou por várias Copas pela seleção alemã.",
+        "Foi campeão mundial em 2014.",
+        "Disputou as Copas de 2002 a 2014.",
+        "É o maior artilheiro da história das Copas, com 16 gols."
+      ]
+    },
+    "explicacao": "Miroslav Klose é o maior goleador da história das Copas, com 16 gols.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este jogador francês?",
+    "payload": {
+      "resposta": "Zinedine Zidane",
+      "dicas": [
+        "Foi campeão mundial em 1998.",
+        "Marcou dois gols de cabeça na final de 1998 contra o Brasil.",
+        "Disputou a final de 2006 contra a Itália.",
+        "Foi expulso na final de 2006 por uma cabeçada em Materazzi."
+      ]
+    },
+    "explicacao": "Zidane brilhou em 1998 e protagonizou a polêmica cabeçada na final de 2006.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este jogador francês?",
+    "payload": {
+      "resposta": "Kylian Mbappé",
+      "dicas": [
+        "É um atacante muito veloz.",
+        "Foi campeão mundial em 2018, ainda muito jovem.",
+        "Marcou três gols na final de 2022 contra a Argentina.",
+        "É um dos principais craques da França atual."
+      ]
+    },
+    "explicacao": "Mbappé foi campeão em 2018 e fez um hat-trick na final de 2022.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "copa-do-mundo",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este jogador brasileiro?",
+    "payload": {
+      "resposta": "Ronaldinho Gaúcho",
+      "dicas": [
+        "Ficou famoso pelo sorriso e pelos dribles.",
+        "Foi campeão mundial com o Brasil em 2002.",
+        "Brilhou no Barcelona depois da Copa.",
+        "Foi eleito melhor jogador do mundo duas vezes."
+      ]
+    },
+    "explicacao": "Ronaldinho Gaúcho foi campeão do mundo em 2002 e encantou o futebol com seus dribles.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "Em qual cidade fica o famoso estádio Maracanã?",
+    "payload": {
+      "alternativas": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Belo Horizonte",
+        "Salvador"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Maracanã é um dos estádios mais famosos do mundo e fica na cidade do Rio de Janeiro.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "Qual o apelido carinhoso de Garrincha, um dos maiores craques do futebol brasileiro?",
+    "payload": {
+      "alternativas": [
+        "Rei do Futebol",
+        "Anjo das Pernas Tortas",
+        "Galinho de Quintino",
+        "Fenômeno"
+      ],
+      "correta": 1
+    },
+    "explicacao": "Garrincha era chamado de 'Anjo das Pernas Tortas' por causa do formato de suas pernas e de seu drible mágico.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "O clássico 'Fla-Flu' é disputado entre quais dois times do Rio de Janeiro?",
+    "payload": {
+      "alternativas": [
+        "Flamengo e Fluminense",
+        "Flamengo e Vasco",
+        "Vasco e Botafogo",
+        "Fluminense e Botafogo"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O 'Fla-Flu' é o clássico entre Flamengo e Fluminense, um dos mais tradicionais do Brasil.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "O 'Derby Paulista' é o clássico entre quais dois times?",
+    "payload": {
+      "alternativas": [
+        "São Paulo e Palmeiras",
+        "Corinthians e São Paulo",
+        "Corinthians e Palmeiras",
+        "Santos e Palmeiras"
+      ],
+      "correta": 2
+    },
+    "explicacao": "O 'Derby Paulista' é o clássico entre Corinthians e Palmeiras.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O clássico 'Gre-Nal' acontece entre quais times do Rio Grande do Sul?",
+    "payload": {
+      "alternativas": [
+        "Grêmio e Juventude",
+        "Internacional e Caxias",
+        "Grêmio e Internacional",
+        "Internacional e Juventude"
+      ],
+      "correta": 2
+    },
+    "explicacao": "O 'Gre-Nal' é o clássico gaúcho entre Grêmio e Internacional, disputado em Porto Alegre.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O clássico 'Choque-Rei' é disputado entre quais dois clubes?",
+    "payload": {
+      "alternativas": [
+        "Palmeiras e São Paulo",
+        "Corinthians e Palmeiras",
+        "São Paulo e Corinthians",
+        "Santos e São Paulo"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O 'Choque-Rei' é o clássico entre Palmeiras e São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O clássico 'Majestoso' é disputado entre quais dois clubes paulistas?",
+    "payload": {
+      "alternativas": [
+        "Palmeiras e São Paulo",
+        "Corinthians e São Paulo",
+        "Corinthians e Palmeiras",
+        "Santos e Corinthians"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O 'Majestoso' é o clássico entre Corinthians e São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "Zico, um dos maiores ídolos da história, jogou a maior parte da carreira em qual clube?",
+    "payload": {
+      "alternativas": [
+        "Vasco",
+        "Fluminense",
+        "Flamengo",
+        "Botafogo"
+      ],
+      "correta": 2
+    },
+    "explicacao": "Zico, o 'Galinho de Quintino', é o maior ídolo da história do Flamengo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Ronaldinho Gaúcho começou sua carreira profissional em qual clube brasileiro?",
+    "payload": {
+      "alternativas": [
+        "Internacional",
+        "Grêmio",
+        "Flamengo",
+        "Atlético-MG"
+      ],
+      "correta": 1
+    },
+    "explicacao": "Ronaldinho Gaúcho iniciou sua carreira no Grêmio, antes de brilhar no Barcelona e em outros clubes.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Em que ano o Flamengo conquistou sua primeira Copa Libertadores da América?",
+    "payload": {
+      "alternativas": [
+        "1976",
+        "1981",
+        "1992",
+        "2019"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Flamengo venceu sua primeira Libertadores em 1981, com o time liderado por Zico.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Qual clube brasileiro venceu a Copa Libertadores em 2013?",
+    "payload": {
+      "alternativas": [
+        "Cruzeiro",
+        "Atlético-MG",
+        "Corinthians",
+        "Grêmio"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Atlético-MG conquistou sua primeira Libertadores em 2013.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Qual clube brasileiro venceu a Copa Libertadores em 2012?",
+    "payload": {
+      "alternativas": [
+        "Corinthians",
+        "São Paulo",
+        "Internacional",
+        "Palmeiras"
+      ],
+      "correta": 0
+    },
+    "explicacao": "O Corinthians conquistou sua primeira Libertadores em 2012.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Em quais anos o Palmeiras conquistou a Copa Libertadores em sequência?",
+    "payload": {
+      "alternativas": [
+        "1999 e 2000",
+        "2018 e 2019",
+        "2020 e 2021",
+        "2021 e 2022"
+      ],
+      "correta": 2
+    },
+    "explicacao": "O Palmeiras venceu a Libertadores em 2020 e 2021, além do título de 1999.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Qual clube gaúcho conquistou a Copa Libertadores em 1983, 1995 e 2017?",
+    "payload": {
+      "alternativas": [
+        "Internacional",
+        "Grêmio",
+        "Juventude",
+        "Caxias"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Grêmio é tricampeão da Libertadores, com títulos em 1983, 1995 e 2017.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Em quais anos o Internacional conquistou a Copa Libertadores?",
+    "payload": {
+      "alternativas": [
+        "2004 e 2008",
+        "2006 e 2010",
+        "2005 e 2009",
+        "2010 e 2014"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Internacional é bicampeão da Libertadores, com títulos em 2006 e 2010.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "O Maracanã fica na cidade de São Paulo.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! O Maracanã fica na cidade do Rio de Janeiro, e não em São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "O Flamengo tem uma das maiores torcidas do Brasil.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Flamengo é conhecido por ter uma das maiores torcidas do país.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "Zico é considerado o maior ídolo da história do Flamengo.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Zico, o 'Galinho de Quintino', é o maior ídolo do Flamengo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Ronaldinho Gaúcho jogou pelo Barcelona durante sua carreira.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Ronaldinho brilhou no Barcelona, onde foi eleito melhor jogador do mundo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Ronaldinho Gaúcho também jogou pelo Flamengo no Brasil.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Ronaldinho defendeu o Flamengo entre 2011 e 2012.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O clássico 'Gre-Nal' é disputado na cidade de Curitiba.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! O 'Gre-Nal', entre Grêmio e Internacional, é disputado em Porto Alegre.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O Corinthians foi campeão mundial de clubes em 2000 e em 2012.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Corinthians venceu o Mundial de Clubes em 2000 e em 2012.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "O São Paulo conquistou a Copa Libertadores em 1992, 1993 e 2005.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O São Paulo é tricampeão da Libertadores, em 1992, 1993 e 2005.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O Cruzeiro é um clube da cidade de Belo Horizonte.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Cruzeiro é um dos grandes clubes de Belo Horizonte, em Minas Gerais.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "O Flamengo venceu a Copa Libertadores em 2019.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Flamengo conquistou a Libertadores em 2019, depois do título de 1981.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "O Vasco da Gama nunca venceu a Copa Libertadores.",
+    "payload": {
+      "verdadeiro": false
+    },
+    "explicacao": "Mito! O Vasco da Gama venceu a Copa Libertadores em 1998.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "O Cruzeiro conquistou a Copa Libertadores em 1976 e em 1997.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Cruzeiro é bicampeão da Libertadores, com títulos em 1976 e 1997.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "Garrincha foi um grande craque da Seleção Brasileira.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Garrincha foi campeão mundial com a Seleção Brasileira em 1958 e 1962.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Romário foi um dos maiores artilheiros do futebol brasileiro.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! Romário é considerado um dos maiores goleadores da história do futebol.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "verdade_mito",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "O Palmeiras é um clube da cidade de São Paulo.",
+    "payload": {
+      "verdadeiro": true
+    },
+    "explicacao": "Verdade! O Palmeiras é um dos grandes clubes da cidade de São Paulo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Na final da Copa Libertadores de 2021, o Palmeiras venceu o Flamengo. Qual foi o placar do Palmeiras?",
+    "payload": {
+      "time_casa": "Palmeiras",
+      "time_visitante": "Flamengo",
+      "gols_casa": 2,
+      "gols_visitante": 1,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Palmeiras venceu o Flamengo por 2 a 1 na prorrogação, conquistando o bicampeonato seguido.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Na final da Copa Libertadores de 2019, o Flamengo venceu o River Plate. Quantos gols o Flamengo fez?",
+    "payload": {
+      "time_casa": "Flamengo",
+      "time_visitante": "River Plate",
+      "gols_casa": 2,
+      "gols_visitante": 1,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Flamengo venceu o River Plate por 2 a 1, com dois gols de Gabigol nos minutos finais.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Na final do Mundial de Clubes de 2012, o Corinthians venceu o Chelsea. Quantos gols o Corinthians fez?",
+    "payload": {
+      "time_casa": "Corinthians",
+      "time_visitante": "Chelsea",
+      "gols_casa": 1,
+      "gols_visitante": 0,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Corinthians venceu o Chelsea por 1 a 0, com gol de Guerrero, sendo campeão mundial.",
+    "verificado": 1,
+    "fonte": "FIFA"
+  },
+  {
+    "tipo": "placar",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Na final da Copa Libertadores de 2020, o Palmeiras venceu o Santos. Quantos gols o Palmeiras fez?",
+    "payload": {
+      "time_casa": "Palmeiras",
+      "time_visitante": "Santos",
+      "gols_casa": 1,
+      "gols_visitante": 0,
+      "lacuna": "gols_casa"
+    },
+    "explicacao": "O Palmeiras venceu o Santos por 1 a 0, com gol de Breno Lopes nos minutos finais.",
+    "verificado": 1,
+    "fonte": "CONMEBOL"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "facil",
+    "enunciado": "Quem é este craque do futebol brasileiro?",
+    "payload": {
+      "resposta": "Garrincha",
+      "dicas": [
+        "Foi campeão mundial com o Brasil em 1958 e 1962.",
+        "Brilhou pelo Botafogo no Rio de Janeiro.",
+        "Era famoso por seus dribles incríveis.",
+        "Seu apelido era 'Anjo das Pernas Tortas'."
+      ]
+    },
+    "explicacao": "Garrincha, o 'Anjo das Pernas Tortas', é considerado um dos maiores dribladores de todos os tempos.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este ídolo do futebol brasileiro?",
+    "payload": {
+      "resposta": "Zico",
+      "dicas": [
+        "É o maior ídolo da história do Flamengo.",
+        "Jogou pela Seleção Brasileira nos anos 1980.",
+        "Era um meia goleador, craque nas cobranças de falta.",
+        "Seu apelido é 'Galinho de Quintino'."
+      ]
+    },
+    "explicacao": "Zico, o 'Galinho de Quintino', é o maior ídolo da história do Flamengo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este atacante brasileiro?",
+    "payload": {
+      "resposta": "Romário",
+      "dicas": [
+        "É considerado um dos maiores artilheiros da história.",
+        "Foi campeão do mundo com o Brasil em 1994.",
+        "Jogou no PSV e no Barcelona na Europa.",
+        "Era um atacante baixinho e muito ágil na frente do gol."
+      ]
+    },
+    "explicacao": "Romário foi um dos maiores goleadores do futebol e campeão mundial em 1994.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Quem é este craque conhecido pela alegria e pelos dribles?",
+    "payload": {
+      "resposta": "Ronaldinho Gaúcho",
+      "dicas": [
+        "Começou a carreira no Grêmio.",
+        "Foi eleito melhor jogador do mundo pela FIFA.",
+        "Brilhou no Barcelona e no Milan.",
+        "Também jogou pelo Flamengo no Brasil."
+      ]
+    },
+    "explicacao": "Ronaldinho Gaúcho encantou o mundo com seus dribles e sua alegria em campo.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este atacante apelidado de 'Fenômeno'?",
+    "payload": {
+      "resposta": "Ronaldo",
+      "dicas": [
+        "Foi campeão do mundo com o Brasil em 1994 e 2002.",
+        "Jogou no Cruzeiro no início da carreira.",
+        "Brilhou no Barcelona, Inter de Milão e Real Madrid.",
+        "Seu apelido é 'Fenômeno'."
+      ]
+    },
+    "explicacao": "Ronaldo, o 'Fenômeno', foi um dos maiores atacantes da história e artilheiro da Copa de 2002.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este meia campeão do mundo em 1994 e 2002?",
+    "payload": {
+      "resposta": "Rivaldo",
+      "dicas": [
+        "Foi campeão do mundo com o Brasil em 2002.",
+        "Foi eleito melhor jogador do mundo pela FIFA em 1999.",
+        "Brilhou no Barcelona da Espanha.",
+        "Era um meia-atacante canhoto, famoso pelos gols de bicicleta e falta."
+      ]
+    },
+    "explicacao": "Rivaldo foi melhor jogador do mundo em 1999 e campeão mundial em 2002.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "quem_e",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "dificil",
+    "enunciado": "Quem é este lateral-esquerdo campeão do mundo em 2002?",
+    "payload": {
+      "resposta": "Roberto Carlos",
+      "dicas": [
+        "Foi campeão do mundo com o Brasil em 2002.",
+        "Jogou muitos anos no Real Madrid.",
+        "Era um lateral-esquerdo famoso pela força no chute.",
+        "Marcou gols de falta com efeito impressionante."
+      ]
+    },
+    "explicacao": "Roberto Carlos foi um dos maiores laterais-esquerdos da história, famoso por seus chutes potentes.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  },
+  {
+    "tipo": "multipla_escolha",
+    "categoria": "futebol-brasileiro",
+    "dificuldade": "medio",
+    "enunciado": "Quais são as cores tradicionais do Flamengo?",
+    "payload": {
+      "alternativas": [
+        "Azul e branco",
+        "Vermelho e preto",
+        "Verde e branco",
+        "Preto e branco"
+      ],
+      "correta": 1
+    },
+    "explicacao": "O Flamengo joga tradicionalmente com as cores vermelho e preto.",
+    "verificado": 1,
+    "fonte": "Wikipédia"
+  }
+]
