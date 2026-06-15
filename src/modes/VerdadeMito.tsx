@@ -3,6 +3,8 @@ import { useGameStore } from '../store/gameStore';
 import type { VerdadeMitoQuestion } from '../data/types';
 import { Hud } from '../components/Hud';
 import { Feedback } from '../components/Feedback';
+import { IconCheck, IconVerdadeMito, IconX } from '../components/Icons';
+import { CATEGORIA_LABEL } from '../data/labels';
 
 export function VerdadeMito() {
   const indice = useGameStore((s) => s.indice);
@@ -32,25 +34,39 @@ export function VerdadeMito() {
   return (
     <>
       <Hud atual={indice + 1} total={total} />
-      <div className="card">
-        <div className="enunciado">{pergunta.enunciado}</div>
-        <div className="vm-botoes">
-          <button
-            className="btn btn-verdade"
-            disabled={respondido}
-            onClick={() => responder(true)}
-          >
-            ✅ Verdade
-          </button>
-          <button
-            className="btn btn-mito"
-            disabled={respondido}
-            onClick={() => responder(false)}
-          >
-            ❌ Mito
-          </button>
+      <div className="tela">
+        <div className="modo-cabecalho">
+          <span className="icon-tile sm bg-coral">
+            <IconVerdadeMito size={20} />
+          </span>
+          <div className="titulo">VERDADE OU MITO?</div>
         </div>
-        {respondido && (
+
+        <div className="sticker vm-frase">
+          <span className="tag" style={{ alignSelf: 'flex-start', marginBottom: 14 }}>
+            {CATEGORIA_LABEL[pergunta.categoria].toUpperCase()}
+          </span>
+          <div className="texto">{pergunta.enunciado}</div>
+        </div>
+
+        {!respondido ? (
+          <div className="vm-botoes">
+            <button
+              className="btn btn-lime btn-press btn-vm"
+              onClick={() => responder(true)}
+            >
+              <IconCheck size={26} />
+              VERDADE
+            </button>
+            <button
+              className="btn btn-coral btn-press btn-vm"
+              onClick={() => responder(false)}
+            >
+              <IconX size={26} />
+              MITO
+            </button>
+          </div>
+        ) : (
           <Feedback
             acertou={resposta === correto}
             explicacao={pergunta.explicacao}

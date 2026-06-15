@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { useGameStore } from '../store/gameStore';
 import { filtrarPalavras } from '../data/content';
 import { gerarCruzadinha } from '../generators/crossword';
+import { IconCruzadinha } from '../components/Icons';
 
 const PONTOS_POR_PALAVRA = 25;
 const key = (r: number, c: number) => `${r},${c}`;
@@ -18,7 +19,6 @@ export function Cruzadinha() {
 
   const [valores, setValores] = useState<Record<string, string>>({});
 
-  // Número exibido na célula inicial de cada entrada.
   const numeros = useMemo(() => {
     const m = new Map<string, number>();
     for (const e of cruz.entradas) {
@@ -61,24 +61,34 @@ export function Cruzadinha() {
 
   return (
     <>
-      <div className="card" style={{ padding: 14 }}>
-        <div className="hud">
-          <span className="pill">{jogador || 'Jogador'}</span>
-          <span className="pill">
-            ✏️ {corretas}/{total}
+      <div className="hud">
+        <div className="hud-linha">
+          <span className="pill pill-ink">{jogador || 'Jogador'}</span>
+          <span className="pill pill-ink" style={{ marginLeft: 'auto' }}>
+            <span className="dot dot-amber" />
+            {corretas * PONTOS_POR_PALAVRA}
           </span>
-          <span className="pill">⚽ {corretas * PONTOS_POR_PALAVRA}</span>
+          <span className="pill pill-line">
+            {corretas}/{total}
+          </span>
         </div>
       </div>
 
-      <div className="card">
-        <div className="enunciado" style={{ fontSize: '1.1rem' }}>
-          Preencha a cruzadinha
+      <div className="tela">
+        <div className="modo-cabecalho">
+          <span className="icon-tile sm bg-amber">
+            <IconCruzadinha size={19} />
+          </span>
+          <div className="titulo">CRUZADINHA</div>
         </div>
-        <div className="grade-wrap">
+
+        <div className="sticker pad grade-wrap">
           <div
             className="cruz-grade"
-            style={{ gridTemplateColumns: `repeat(${cruz.cols}, 30px)` }}
+            style={{
+              gridTemplateColumns: `repeat(${cruz.cols}, 34px)`,
+              gridTemplateRows: `repeat(${cruz.rows}, 34px)`,
+            }}
           >
             {Array.from({ length: cruz.rows }).map((_, r) =>
               Array.from({ length: cruz.cols }).map((__, c) => {
@@ -108,36 +118,40 @@ export function Cruzadinha() {
         </div>
 
         <div className="dicas-cruz">
-          {horizontais.length > 0 && (
-            <>
-              <h3>Horizontais ➡️</h3>
-              <ol>
-                {horizontais.map((e) => (
-                  <li key={`h${e.numero}`}>
-                    <strong>{e.numero}.</strong> {e.word.definicao}
-                  </li>
-                ))}
-              </ol>
-            </>
-          )}
           {verticais.length > 0 && (
-            <>
-              <h3>Verticais ⬇️</h3>
-              <ol>
-                {verticais.map((e) => (
-                  <li key={`v${e.numero}`}>
-                    <strong>{e.numero}.</strong> {e.word.definicao}
-                  </li>
-                ))}
-              </ol>
-            </>
+            <div>
+              <div className="grupo-titulo">Verticais</div>
+              {verticais.map((e) => (
+                <div className="dica-cruz" key={`v${e.numero}`}>
+                  <span className="num">{e.numero}</span>
+                  <span className="txt">
+                    {e.word.definicao} ({e.word.palavra.length})
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
+          {horizontais.length > 0 && (
+            <div>
+              <div className="grupo-titulo">Horizontais</div>
+              {horizontais.map((e) => (
+                <div className="dica-cruz" key={`h${e.numero}`}>
+                  <span className="num">{e.numero}</span>
+                  <span className="txt">
+                    {e.word.definicao} ({e.word.palavra.length})
+                  </span>
+                </div>
+              ))}
+            </div>
           )}
         </div>
-      </div>
 
-      <div className="acoes-rodape">
-        <button className="btn btn-primario" onClick={terminar}>
-          {completou ? 'Cruzadinha completa! Ver resultado' : 'Terminar'}
+        <button
+          className="btn btn-lime btn-press"
+          onClick={terminar}
+          style={{ marginTop: 'auto' }}
+        >
+          {completou ? 'Cruzadinha completa! Ver resultado' : 'Verificar'}
         </button>
       </div>
     </>

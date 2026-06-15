@@ -3,6 +3,7 @@ import { useGameStore } from '../store/gameStore';
 import type { QuemEQuestion } from '../data/types';
 import { Hud } from '../components/Hud';
 import { Feedback } from '../components/Feedback';
+import { IconBulb } from '../components/Icons';
 import { pontosQuemE } from '../game/scoring';
 
 // Normaliza para comparar respostas (sem acento, minúsculo, sem espaços extras).
@@ -24,9 +25,7 @@ function acertou(resposta: string, gabarito: string): boolean {
 export function QuemE() {
   const indice = useGameStore((s) => s.indice);
   const total = useGameStore((s) => s.totalRodadas);
-  const pergunta = useGameStore(
-    (s) => s.perguntas[s.indice],
-  ) as QuemEQuestion;
+  const pergunta = useGameStore((s) => s.perguntas[s.indice]) as QuemEQuestion;
   const responderQuiz = useGameStore((s) => s.responderQuiz);
   const proximaPergunta = useGameStore((s) => s.proximaPergunta);
   const ultimoGanho = useGameStore((s) => s.ultimoGanho);
@@ -36,6 +35,8 @@ export function QuemE() {
   const [palpite, setPalpite] = useState('');
   const [respondido, setRespondido] = useState(false);
   const [foiCerto, setFoiCerto] = useState(false);
+
+  const ocultas = dicas.length - reveladas;
 
   function revelarMais() {
     if (respondido) return;
@@ -47,7 +48,6 @@ export function QuemE() {
     const certo = acertou(palpite, pergunta.payload.resposta);
     setFoiCerto(certo);
     setRespondido(true);
-    // Pontuação decresce conforme dicas reveladas (seção 7).
     responderQuiz(certo, pontosQuemE(reveladas));
   }
 
@@ -69,50 +69,68 @@ export function QuemE() {
   return (
     <>
       <Hud atual={indice + 1} total={total} />
-      <div className="card">
-        <div className="enunciado">Quem é o jogador?</div>
+      <div className="tela">
+        <div className="modo-cabecalho">
+          <div className="quem-avatar">?</div>
+          <div className="quem-titulo">
+            QUEM É O<br />
+            JOGADOR?
+          </div>
+          <div className="quem-vale">
+            vale
+            <br />
+            <span className="num">{pontosQuemE(reveladas)}</span>
+          </div>
+        </div>
+
         <div className="dicas">
           {dicas.slice(0, reveladas).map((d, i) => (
             <div className="dica" key={i}>
-              💡 {d}
+              <span style={{ color: 'var(--amber)', display: 'flex', flex: 'none' }}>
+                <IconBulb size={18} />
+              </span>
+              <span className="texto">{d}</span>
             </div>
           ))}
+          {ocultas > 0 && !respondido && (
+            <div className="dica-oculta">
+              + {ocultas} dica{ocultas > 1 ? 's' : ''} escondida
+              {ocultas > 1 ? 's' : ''}
+            </div>
+          )}
         </div>
 
-        {!respondido && (
+        {!respondido ? (
           <>
-            <p className="aviso" style={{ textAlign: 'left' }}>
-              Vale <strong>{pontosQuemE(reveladas)}</strong> pontos com{' '}
-              {reveladas} dica{reveladas > 1 ? 's' : ''}.
-            </p>
             <input
-              className="quem-input"
+              className="input-quem"
               placeholder="Digite o nome do jogador"
               value={palpite}
               onChange={(e) => setPalpite(e.target.value)}
               onKeyDown={(e) => e.key === 'Enter' && responder()}
             />
-            <div style={{ display: 'grid', gap: 10, marginTop: 12 }}>
+            <button
+              className="btn btn-lime btn-press"
+              disabled={palpite.trim() === ''}
+              onClick={responder}
+            >
+              Responder
+            </button>
+            <div className="quem-extra" style={{ marginTop: 'auto' }}>
               <button
-                className="btn btn-primario"
-                disabled={palpite.trim() === ''}
-                onClick={responder}
+                className="btn btn-ghost"
+                onClick={revelarMais}
+                disabled={reveladas >= dicas.length}
+                style={{ color: 'var(--ink)' }}
               >
-                Responder
+                Revelar dica
               </button>
-              {reveladas < dicas.length && (
-                <button className="btn" onClick={revelarMais}>
-                  Revelar próxima dica (vale menos)
-                </button>
-              )}
-              <button className="btn" onClick={desistir}>
-                Não sei / Passar
+              <button className="btn btn-ghost" onClick={desistir}>
+                Passar
               </button>
             </div>
           </>
-        )}
-
-        {respondido && (
+        ) : (
           <Feedback
             acertou={foiCerto}
             explicacao={pergunta.explicacao}

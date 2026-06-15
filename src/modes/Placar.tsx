@@ -3,13 +3,21 @@ import { useGameStore } from '../store/gameStore';
 import type { PlacarQuestion } from '../data/types';
 import { Hud } from '../components/Hud';
 import { Feedback } from '../components/Feedback';
+import { IconPlacar } from '../components/Icons';
+
+function abreviacao(nome: string): string {
+  return nome
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^A-Za-z]/g, '')
+    .slice(0, 3)
+    .toUpperCase();
+}
 
 export function Placar() {
   const indice = useGameStore((s) => s.indice);
   const total = useGameStore((s) => s.totalRodadas);
-  const pergunta = useGameStore(
-    (s) => s.perguntas[s.indice],
-  ) as PlacarQuestion;
+  const pergunta = useGameStore((s) => s.perguntas[s.indice]) as PlacarQuestion;
   const responderQuiz = useGameStore((s) => s.responderQuiz);
   const proximaPergunta = useGameStore((s) => s.proximaPergunta);
   const ultimoGanho = useGameStore((s) => s.ultimoGanho);
@@ -20,11 +28,12 @@ export function Placar() {
   const p = pergunta.payload;
   const correto = p.lacuna === 'gols_casa' ? p.gols_casa : p.gols_visitante;
   const golsCasaConhecido = p.lacuna !== 'gols_casa';
+  const acertou = Number(valor) === correto;
 
   function confirmar() {
     if (respondido || valor === '') return;
     setRespondido(true);
-    responderQuiz(Number(valor) === correto);
+    responderQuiz(acertou);
   }
 
   function proximo() {
@@ -34,15 +43,15 @@ export function Placar() {
   }
 
   function campoGols(conhecido: boolean, gols: number) {
-    if (conhecido) return <span className="placar-gols">{gols}</span>;
+    if (conhecido) return <div className="score-gols">{gols}</div>;
     if (respondido) {
       return (
-        <span
-          className="placar-gols"
-          style={{ color: Number(valor) === correto ? '#1f9d57' : '#d1372b' }}
+        <div
+          className="score-gols"
+          style={{ color: acertou ? 'var(--lime)' : 'var(--coral)' }}
         >
           {valor === '' ? '?' : valor}
-        </span>
+        </div>
       );
     }
     return (
@@ -53,7 +62,7 @@ export function Placar() {
         inputMode="numeric"
         value={valor}
         onChange={(e) => setValor(e.target.value)}
-        aria-label="placar"
+        aria-label="gols"
       />
     );
   }
@@ -61,34 +70,55 @@ export function Placar() {
   return (
     <>
       <Hud atual={indice + 1} total={total} />
-      <div className="card">
-        <div className="enunciado">{pergunta.enunciado}</div>
-        <div className="placar-jogo">
-          <span className="placar-time">{p.time_casa}</span>
-          {campoGols(golsCasaConhecido, p.gols_casa)}
-          <span>x</span>
-          {campoGols(!golsCasaConhecido, p.gols_visitante)}
-          <span className="placar-time">{p.time_visitante}</span>
+      <div className="tela">
+        <div className="modo-cabecalho">
+          <span className="icon-tile sm bg-amber">
+            <IconPlacar size={20} />
+          </span>
+          <div className="titulo">COMPLETE O PLACAR</div>
         </div>
-        {!respondido && (
+
+        <div className="enunciado" style={{ fontSize: 15, fontWeight: 700 }}>
+          {pergunta.enunciado}
+        </div>
+
+        <div className="scoreboard">
+          <div className="scoreboard-linha">
+            <div className="score-time">
+              <div className="score-crest casa">{abreviacao(p.time_casa)}</div>
+              <div className="nome">{p.time_casa}</div>
+            </div>
+            {campoGols(golsCasaConhecido, p.gols_casa)}
+            <div className="score-x">×</div>
+            {campoGols(!golsCasaConhecido, p.gols_visitante)}
+            <div className="score-time">
+              <div className="score-crest visit">
+                {abreviacao(p.time_visitante)}
+              </div>
+              <div className="nome">{p.time_visitante}</div>
+            </div>
+          </div>
+        </div>
+
+        {!respondido ? (
           <button
-            className="btn btn-primario"
+            className="btn btn-lime btn-press"
             disabled={valor === ''}
             onClick={confirmar}
+            style={{ marginTop: 'auto' }}
           >
             Confirmar
           </button>
-        )}
-        {respondido && (
+        ) : (
           <Feedback
-            acertou={Number(valor) === correto}
+            acertou={acertou}
             explicacao={pergunta.explicacao}
             fonte={pergunta.fonte}
             ganho={ultimoGanho}
             textoComplementar={
-              Number(valor) === correto
+              acertou
                 ? undefined
-                : `Placar correto: ${p.time_casa} ${p.gols_casa} x ${p.gols_visitante} ${p.time_visitante}`
+                : `Placar certo: ${p.time_casa} ${p.gols_casa} x ${p.gols_visitante} ${p.time_visitante}`
             }
             onProximo={proximo}
           />

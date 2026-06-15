@@ -9,6 +9,9 @@ banco curado e verificado por humanos.
 - **React + Vite + TypeScript** — base web reaproveitável no app.
 - **Zustand** — estado da partida (sem Redux).
 - **Capacitor** — empacota o mesmo código web como iOS/Android.
+- **Design "Matchday"** — papel quente, tinta verde-pinheiro, verde-limão elétrico
+  + acentos coral/âmbar, sombras de adesivo, tipografia Anton + Archivo. As fontes
+  são **auto-hospedadas** (`@fontsource`), sem CDN, para preservar o offline.
 - **Conteúdo:** JSON estático curado em `content/` (zero infra, zero rede). A migração
   para SQLite/PostgreSQL na Fase 2 troca apenas `src/data/content.ts`.
 
