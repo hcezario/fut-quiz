@@ -9,8 +9,6 @@ import { CATEGORIA_LABEL, DIFICULDADE_DOT, DIFICULDADE_LABEL } from '../data/lab
 const LETRAS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
 export function MultiplaEscolha() {
-  const indice = useGameStore((s) => s.indice);
-  const total = useGameStore((s) => s.totalRodadas);
   const pergunta = useGameStore(
     (s) => s.perguntas[s.indice],
   ) as MultiplaEscolhaQuestion;
@@ -35,7 +33,7 @@ export function MultiplaEscolha() {
 
   return (
     <>
-      <Hud atual={indice + 1} total={total} />
+      <Hud />
       <div className="tela">
         <div className="sticker pad">
           <div style={{ display: 'flex', gap: 7, marginBottom: 11 }}>

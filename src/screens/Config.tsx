@@ -17,6 +17,8 @@ const DIFICULDADES: { id: Dificuldade; rotulo: string; dot: string }[] = [
 
 export function Config() {
   const modo = useGameStore((s) => s.modo);
+  const modoPartida = useGameStore((s) => s.modoPartida);
+  const jogadores = useGameStore((s) => s.jogadores);
   const categorias = useGameStore((s) => s.categorias);
   const dificuldades = useGameStore((s) => s.dificuldades);
   const toggleCategoria = useGameStore((s) => s.toggleCategoria);
@@ -27,7 +29,10 @@ export function Config() {
 
   if (!modo) return null;
   const info = modoInfo(modo);
-  const semConteudo = disponiveis === 0;
+  const duelo = modoPartida === 'duelo';
+  // No duelo cada jogador precisa de perguntas distintas (mínimo 2 no total).
+  const minimo = duelo ? 2 : 1;
+  const semConteudo = disponiveis < minimo;
 
   return (
     <>
@@ -40,7 +45,11 @@ export function Config() {
         </span>
         <div>
           <div className="topbar-titulo anton">{info.titulo}</div>
-          <div className="topbar-sub">Configurar partida</div>
+          <div className="topbar-sub">
+            {duelo
+              ? `Duelo · ${jogadores[0] || 'Jogador 1'} vs ${jogadores[1] || 'Jogador 2'}`
+              : 'Configurar partida'}
+          </div>
         </div>
       </div>
 

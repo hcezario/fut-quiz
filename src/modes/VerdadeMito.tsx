@@ -7,8 +7,6 @@ import { IconCheck, IconVerdadeMito, IconX } from '../components/Icons';
 import { CATEGORIA_LABEL } from '../data/labels';
 
 export function VerdadeMito() {
-  const indice = useGameStore((s) => s.indice);
-  const total = useGameStore((s) => s.totalRodadas);
   const pergunta = useGameStore(
     (s) => s.perguntas[s.indice],
   ) as VerdadeMitoQuestion;
@@ -33,7 +31,7 @@ export function VerdadeMito() {
 
   return (
     <>
-      <Hud atual={indice + 1} total={total} />
+      <Hud />
       <div className="tela">
         <div className="modo-cabecalho">
           <span className="icon-tile sm bg-coral">

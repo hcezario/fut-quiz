@@ -1,6 +1,7 @@
 import { useGameStore } from './store/gameStore';
 import { Home } from './screens/Home';
 import { Config } from './screens/Config';
+import { Handoff } from './screens/Handoff';
 import { Resultado } from './screens/Resultado';
 import { MultiplaEscolha } from './modes/MultiplaEscolha';
 import { VerdadeMito } from './modes/VerdadeMito';
@@ -37,6 +38,7 @@ export default function App() {
       {screen === 'home' && <Home />}
       {screen === 'config' && <Config />}
       {screen === 'jogo' && <Jogo />}
+      {screen === 'handoff' && <Handoff />}
       {screen === 'resultado' && <Resultado />}
     </div>
   );
